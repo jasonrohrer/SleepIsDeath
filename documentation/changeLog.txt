@@ -1,0 +1,508 @@
+Version 16    2010-November-15
+
+--Improved responsiveness of mouse and keyboard controls.
+
+--More accurate frame timing for true 30 frames-per-second when possible.
+
+--Enabled GL swap control to minimize visual tearing.
+
+--Added auto-removal of bad search database entries when they are encountered.
+
+--Changed to ignore duplicate search database entries.
+
+--Added "used in" tool tip for resources that cannot be deleted due to usage.
+
+
+
+
+Version 15b  2010-June-10
+
+--Rolled back to older Windows SDL version (1.2.13), fixing international 
+  keyboard input issues.
+
+--Fixed reversed o accents in font image file.
+
+
+
+
+Version 15   2010-May-28
+
+--Fixed crash when getting local address on certain platforms with certain 
+  network setups (VPN).
+
+--Fixed crash when scale reduced to zero tones.
+
+--Added missing tool tip for Scene deletion.
+
+--Improved build time by making dependency tracking modular.
+
+--Added usage tracking to prevent accidental deletion of resources that are 
+  being used by other resources (such as objects still used in some scenes).
+
+--Fixed a Controller freeze triggered by a Player that previously ran in
+  Controller mode in the same session.
+
+--Improved Unix source build scripts (thanks to Andy Sommerville).
+
+--Window close button now functions properly in windowed mode (thanks to
+  Andy Sommerville).
+
+--Fixed freeze on Player end when Controller sends a Song referencing parts
+  that have been deleted.
+
+--Added Extended ASCII support for non-US accents and characters.  Most
+  western-European languages should be supported by the included font image 
+  (ISO/8859-1, Latin-1).  Other languages (such as those that use Cyrillic) 
+  can be used by modifying the font image.
+
+--Added Color Palettes as first-class resources with their own Picker.
+
+--Fixed many compile warnings thrown by certain versions of GCC.
+
+--Fixed bug in rubber stamp tool when dealing with transparent areas.
+
+--Improved appearance of grid in Room Editor.
+
+--Improved grid lines in various pixel editors to reduce color distortions.
+
+--Added a note about ESC key to menu screen.
+
+--Can now use mouse, in addition to arrow keys, on menu screen.
+
+--Shows port number on manual connection screen.
+
+--New object position hints in room editor (helpful when placing wall flags
+  around objects).
+
+--Added IP (and IP:port) command-line argument to auto-join a hosted game.
+
+--Added memory of last set speech bubble position for each object, alleviating
+  the need to manually set speech bubble positions most of the time.
+
+--Added tool tips for each tile in Room Editor grid.
+
+--Added check for resouceCache write permissions.
+
+--Added a button for holding certain objects across scene changes.
+
+--Added a button for colorizing all pixels of a sprite or tile.
+
+--Ctrl-Q can be used to quit (in addition to ESC).
+
+--Fixed a bug that caused control key to stick when opening editor with 
+  keyboard shortcuts.
+
+--Ctrl-A to add a new sprite layer to an object at current mouse location
+  (great for adding many of the same sprite, like tree leaves).
+
+--Ctrl-A to add a new object to a scene at current mouse location
+  (great for adding many of the same objects, like flowers).
+
+--Improved object editor mouse input so that only dragging moves a layer
+  (clicking on an empty spot no longer moves a layer).
+
+--Added buttons for moving a sprite layer up and down in the Object Editor.
+
+
+
+Version 14b  2010-April-23   
+
+--Fixed import cache hang when a referenced resource does not exist.
+
+--Fixed line endings in stringDatabase.txt on windows.
+
+--Fixed long loading times when importing resource packs.
+
+--Improved loading times when importing an old resource cache.
+
+--Added a loading screen.
+
+--Fixed a glitch where Waiting message not shown after joining a second game as   Player.
+
+--Reduced audio buffer size to improve latency (was increased during v14 
+  debugging).
+
+--Added missing "add to pack" button for Songs, removed for Phrases.
+
+--Removed wayward "edit timbre" button from Phrase Editor.
+
+--Added Ctrl-E to edit selected object or selected sprite layer.
+
+
+
+
+Version 14    2010-April-20
+
+--Fixed memory allocation bug in unique IDs.
+
+--Fixed code to be 64-bit clean.
+
+--Fixed bug in adding resources to a picker stack when that stack is visible.
+
+--Fixed crash when undoing back to default object in Object editor.
+
+--Fixed flip book sizing and distortion issues when screen is not 640x480
+
+--Overhauled music editor, making it much more powerful.
+
+--Fixed bug in selection of previously colored but erased sprite areas.
+
+--Improved transparency toggle tool tip in Object editor.
+ 
+--Added Ctrl-W to close editors.
+
+--Added Alt-Enter to leave fullscreen mode (as work-around for lack of working
+  alt-tab behavior on the Mac).
+
+--Added an import directory to make upgrading easier.
+
+--Made UPNP messages more clear.
+
+--Cleared external address if going back to hosting a local game.
+
+--Added per-layer additive blend mode (for glowing objects).
+
+--Search results with same name are now shown in newest-first order.
+
+
+
+Version 13   2010-April-9
+
+--Fixed crash when opening and closing color editor repeatedly.
+
+--Fixed glitch in dragging to edit room wall markers.
+
+--Fixed a glitch in editing selection for stamp tool.
+
+--Fixed keyboard event bug in Practice mode.
+
+--Changed flashing warning display so it always on top (was blocked by color
+  palette).
+
+--Fixed quit confirmation to linger on the screen even if mouse moved. 
+
+--Fixed screen size bug when user specifies an unsupported resolution for
+  his or her monitor.
+
+--Changed so that background tile (for pickers and object editor) does not
+  follow tile chosen in room editor.  Instead, it always matches the background
+  tile under the currently selected object in the scene.
+
+--Changed so that speech bubble moving tool cannot change selected object.
+
+
+
+Version 12   2010-April-8
+
+--Fixed timing bug that allowed duplicate moves to be sent, leading to 
+  out-of-synch games
+
+--Fixed crash (and misbehavior) when dragging whole object in object editor
+  starting from off the edge of the display.
+
+--Fixed behavior when dragging between sliders and buttons.  Sliders can
+  now be dragged around wildly without affecting nearby components.
+
+--Dragging around in color palette changes selected color well.
+
+--Improved focus behavior of text fields on menu screen.
+
+--Now Controller interface holds keyboard focus on speech bubbles no matter
+  where the user clicks on display (unless typing in a text field).  
+  Typing always adds to current object's speech now.
+
+--Fixed a crash when more than 255 layers added to an object.
+
+--Added better user feedback when an object is full.
+
+--Added better user feedback when a scene is full.
+
+--Tool tips and timer now on top of all scenery.
+
+--Practice mode now outputs flipbooks too (solo play?).
+
+--Blocked Controller typing into Player's bubble, since it's not sent anyway.
+
+--Fixed Picker background tile being updated due to keyboard events.
+
+--No longer treats mouse wheel events as mouse clicks.
+
+--Fixed crash when resourceCache foldernot preset---makes a new folder 
+  if needed.
+
+--Moved stringDatabase.txt into resourceCache folder.
+
+--Fixed a slow-down when dragging large objects across tile boundaries.
+
+--Changed to hide selected layer flashing border when dragging layer (for 
+  precise positioning).
+
+--Added checksum to network protocol, fixing a crash when bad network data
+  received.
+
+--Updated all bundled v9 resource files to the v10+ format.
+
+
+
+
+
+Version 11   2010-April-7
+
+--Fixed drag and drop crash bug in object editor.
+
+--Fixed a line-end bug in windows fullscreen settings file.
+
+
+ 
+
+
+Version 10   2010-April-7
+
+--Changed OpenGL color functions to work around a bug in some video drivers.
+
+--Added key-repeat when holding down a key (deleting text is easier).
+
+--Added text boxes in addition to speech bubbles.
+
+--Added an object locking feature that makes it easier to manipulate complex
+  scenes.
+
+--Made Close button infinite to upper left.
+
+--Switched to an HSV color picker (from RGB).
+
+--Replaced color stack with a collection of editable color wells.
+
+--Added rotate and flip buttons in object editor.
+
+--Added resource packs for sharing resources through email and web.
+
+--Added disk-based cache of thumbnail images to speed up resource pickers.
+
+--Improved thumbnail view of Scenes with small rooms.
+
+--Improved centering of room thumbnails.
+
+--Fixed timing inconsistencies (30 seconds is now always 30 seconds).
+
+--Fixed resizing and mouse handling for screen sizes other than 640x480.
+
+--Moved flip book PNGs into an images subdir.  Made file names order-proof.
+
+--Added pure HTML version of flip books for easy local viewing.
+
+--Added a per-layer transparency to objects.
+
+--Fixed rendering of object transparencies in scene thumbnails.
+
+--Fixed event passing bug when new editor opened.
+
+--Made text fields easier to click.
+
+--Changed default mode to speech when player position frozen.
+
+--Added a practice mode against timer for Controller.
+
+--Speech delete button on Controller side now clear's Player's action too.
+
+--Added settings file for time limit.
+
+--Moved all printed output to a log file.
+
+--Ctrl-X mapped to delete for scene objects and object layers.
+
+--Added confirmation on quit (after pressing Escape).
+
+--Fixed a movement glitch when player types before moving.
+
+--Improved highlights of selected object layers.
+
+--Fixed jitter when speech bubble auto-flips.
+
+--Added any-key message to bottom of volume screen.
+
+--Background tile in picker now set properly when object added or removed.
+
+--Speech flip button enabled properly after speech deleted.
+
+
+
+
+
+Version 9   2010-March-30
+
+--Fixed freeze bug when objects requested across wire that have been deleted.
+
+--Fixed image cache of deleted objects.
+
+--Removed multiple fetching of same new object in one batch network request.
+
+--Action arrows fixed to never go off sides of screen.
+
+--Re-wrote word-wrapping algorithm for speech bubbles to handle spacing 
+  automatically and hyphenate words that are too long for one line.
+
+--Fixed bug in speech flip button appearing when it can't be used.
+
+
+
+
+Version 8   2010-March-29
+
+--Fixed position of Clear button in room editor.
+
+--Improved search box behavior for multi-word searches.
+
+--Fixed a drag-and-drop bug that occured accross editors.
+
+--Removed unnecessary object descriptor tool tips on Player side.
+
+--Added dynamic bubble tails to keep speech from going off top or sides
+  of screen.
+
+--Fixed bug that made Player's speech not deleteable on Controller side.
+
+--Improved sizing of verb box with single-pixel increments.
+
+--Typing on Player's side automatically adds speech, even if in Move mode.
+
+--Player's Speech and Action Delete buttons are now modeless.
+
+
+
+
+Version 7   2010-March-25
+
+--Disabled player send button on initial turn waiting screen, fixing a 
+  potential out-of-synch issue.
+
+--Added UPNP support for opening ports on routers and obtaining the external
+  IP address (makes remote internet games easier to set up).
+
+--ESC from inside the game now takes you back to the menu where you can
+  start a new game.
+
+--Added Scenes (rooms with placed objects) as first-class resources.
+
+--Got rid of redundant "new object" mode on game state toolbar.
+
+--Improved object selection behavior when objects overlap.
+
+--Added an "add object" button.
+
+--Added button for editing the selected object directly.
+
+--Improved arrangement of state editor UI.
+
+--Removed flipbook output toggle button.  Flipbooks always on now.
+
+--Improved arrangement of object editor UI.
+
+--Added button for editing the selected sprite layer directly.
+
+--Added support for moving all sprite layers together relative to object 
+  anchor.
+
+--Added support for dragging and dropping all layers from one object into 
+  another.
+
+--Controller editing of selected object's speech now happens whenever you type,
+  regardless of what mode you are in.
+
+--Added confirmation for Send button.
+
+
+
+Version 6   2010-March-21
+
+--Drag-and-drop from object picker to add objects to scene.
+
+--Selected sprite layer blinks in object editor.
+
+--Fixed empty verb arrows that appeared in slide show when player frozen.
+
+--Sprite Picker selected sprite now follows current sprite layer in object
+  editor.  Got rid of redundant Grab Layer button.
+
+--Added missing warning display to music editor.
+
+--Increased to 10 bookmarks, fixed add button, added mnemonic colors.
+
+--Locked keyboard focus even if player clicks off main game display area.
+
+--Fixed double-space issue in speech bubbles.
+
+--Fleshed out music editor with more functionality.
+
+--Graceful failure if game folder is read-only.
+
+
+
+
+Version 5   2010-March-18
+
+--Fixed bug in player send behavior and stale speech clearing.
+
+--Redesign of sprite mask editing to make it more intuitive.
+
+--Basic keyboard commands (shift-click to pick color, ctrl-z to undo)
+
+--Click to pick object sprite layer in object editor.
+
+--Drag-and-drop from sprite picker into object editor.
+
+--Flipbook output now on by default.
+
+
+
+
+Version 4   2010-March-7
+
+--Controller can now receive subsequent Player connections after initial Player
+  quits.
+
+--Highlight speech bubble that is currently being edited.
+
+--Auto-choose background tile for picker displays using current object position
+  in game.
+
+--Slide-show output.
+
+--Player send button.
+
+--Game state bookmarks.
+
+--Buttons for jumping to top/bottom object layers.
+
+--Object depth sorting.
+
+--Object anchors more visible.
+
+--Warning display for controller (important game events).
+
+--Autoclearing stale speech.
+
+
+
+
+Version 3   2010-February-11
+
+--Added fade sliders for objects and room.
+
+--Fixed 1 pixel text overlap in speech bubbles (added more leading).
+
+--Fixed undo behavior of switching selected object.
+
+--Pickers now update properly when game state is cleared.
+
+--Added auto-host and auto-join modes to make startup automatic in a gallery
+  setting. 
+
+--Fixed room editor mini view when clear button pressed.
+
+
+
+
+Version 2    2010-February-1
+
+Initial release for Art History of Games conference.

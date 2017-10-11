@@ -1,0 +1,40 @@
+Instructions for upgrading from previous versions to v16.
+
+To transfer your resources across:
+
+1. PLEASE make and keep a backup of your old game directory.  I would be sad if
+   you lost any of your hard work, through your error or my error.
+
+2. COPY (don't move) your old "resourceCache" folder INTO the "importOldCache"
+   folder in v16.
+
+3. Start the v16 game, and enter Controller mode.  This will "pause" for
+   longer than normal after you hit "G" (before the Controller mode is shown),
+   while your old resources are merged and upgraded.  This will only happen
+   once, so be patient.
+
+4. After the Controller mode loads, check that your resources have been
+   imported correctly.
+
+
+v16 is compatible in every way with v15.
+
+
+
+v13 Packs can be loaded into v16, but they will trigger a similar pause at
+startup (while they are converted).
+
+v14 Packs can be loaded into v16.
+
+
+v15/v16 Packs are NOT compatible with v13.  
+
+v15/v16 Packs are compatible with v14 as long as they do not contain 
+Color Palette resources.  
+
+
+v16 should be able to both host and play against v14.
+
+v16 CANNOT host games for a v13 player (the objects sent across now have more
+information in them that v13 cannot handle).  v13 should be able to host a 
+v16 player, however.

@@ -1,0 +1,9 @@
+SOURCEDIR=`pwd`
+echo "running export from $SOURCEDIR"
+
+cd ../../../../minorGems
+hg archive $SOURCEDIR/minorGems
+
+cd $SOURCEDIR
+
+cvs -z3 -d:ext:jcr13@hcsoftware.cvs.sourceforge.net:/cvsroot/hcsoftware export -r HEAD SleepIsDeath

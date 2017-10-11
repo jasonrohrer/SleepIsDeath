@@ -1,0 +1,82 @@
+#!/bin/bash
+
+#
+# Modification History
+#
+# 2010-April-2        Andy Sommerville
+# - Added a few "|| exit 1" to terminate as soon as error occurs.
+# - Read menu choice from argv[1].
+# - Added "-p" to mkdir to suppress "already exists" message.
+# - Added automatic backup of "resourceCache". (wish I'd thought of that a few minutes ago....)
+#
+# 2007-November-12    Jason Rohrer
+# Copied from Cultivation.
+#
+
+
+cd SleepIsDeath
+chmod u+x ./configure
+./configure $@ || exit 1
+
+
+echo "Building miniUPNP..."
+
+cd ../minorGems/network/upnp/miniupnpc
+make || exit 1
+cd ../../../../SleepIsDeath
+
+
+cd gameSource
+
+
+echo "Building SleepIsDeath..."
+
+make || exit 1
+
+
+
+cd ../..
+
+mkdir -p graphics
+mkdir -p settings
+mkdir -p languages
+mkdir -p templates
+mkdir -p loadingBay
+mkdir -p importOldCache
+
+# this now happens from resource pack expansion, below
+#mkdir resourceCache
+#cd resourceCache
+#mkdir object room sprite tile
+#cd ..
+
+
+cp SleepIsDeath/gameSource/SleepIsDeath ./SleepIsDeathApp
+cp SleepIsDeath/documentation/Readme.txt .
+cp SleepIsDeath/documentation/Upgrading.txt .
+cp SleepIsDeath/gameSource/graphics/* ./graphics
+cp SleepIsDeath/gameSource/settings/* ./settings
+cp SleepIsDeath/gameSource/languages/* ./languages
+cp SleepIsDeath/gameSource/language.txt ./
+cp SleepIsDeath/gameSource/templates/*.php ./templates
+cp SleepIsDeath/gameSource/templates/*.html ./templates
+cp SleepIsDeath/gameSource/templates/*.png ./templates
+
+# backup old resources
+if [ -d resourceCache ] ; then
+  BACKUP=resourceCache-backup-$(date '+%Y%m%d%H%M%S').tar.gz
+  echo "Backing up resources to $BACKUP"
+  tar -czf $BACKUP resourceCache
+fi
+
+# copy default resources
+tar xzf SleepIsDeath/gameSource/resourceSet15.tar.gz
+
+cp -r resourceSet15/* .
+
+
+echo "Run SleepIsDeathApp to play."
+
+
+
+

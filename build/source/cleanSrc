@@ -1,0 +1,18 @@
+rm -r minorGems/ai
+rm -r minorGems/bench
+rm -r minorGems/doc
+rm -r minorGems/examples
+rm -r minorGems/sound
+
+rm -r SleepIsDeath/documentation/guides
+rm -r SleepIsDeath/documentation/html
+rm -r SleepIsDeath/documentation/installation
+rm -r SleepIsDeath/documentation/press
+rm -r SleepIsDeath/documentation/releasePlan
+rm -r SleepIsDeath/documentation/teaser
+
+rm SleepIsDeath/gameSource/resourcePack*.tar.gz
+rm SleepIsDeath/gameSource/resourceSet10.tar.gz
+rm SleepIsDeath/gameSource/resourceSet12.tar.gz
+rm SleepIsDeath/gameSource/resourceSet14.tar.gz
+

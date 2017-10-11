@@ -1,0 +1,79 @@
+> You&#8217;re well known as a maker of art games &#8211; titles that use metaphor  
+> and mechanics to impart themes and ideas. Yet Sleep Is Death is far  
+> more about play and interactions between players. Why make such a  
+> different game?
+
+After making eleven games in the proceduralist style, I started to feel the limitations pretty sharply.  I was stuck with symbols of people and relationships, not characters and conversations.  Symbols can be powerful, but they are usually general.  A lot of the things that I wanted to express were much more specific.  Grandparents.  Bullies.  Girlfriends.  Not symbols of these characters, but the actual people.  And I don't mean that I wanted to tell stories, because these real-life experiences were deeply interactive.  How could I make fully-interactive work that did justice to this material?
+
+
+> Having a human brain replace AI is a rather elegant solution to the  
+> problems faced by games like Façade. What inspirations and  
+> experiences led you to think of this solution?
+
+I kept throwing away game design topics whenever I realized that they involved characters and dialog.  Dialog in games is a really hard unsolved problem.  Some very smart people, like Chris Crawford, have been working on it for decades.  Facade may be our best working example, and that's five years old.  So there is essentially no progress being made in this seemingly-important area, and some experts predict that we're still 20 years away.  Yikes!  I'm not going to throw decades of my life at this potentially unsolvable problem.  On the other hand, I don't want wait 20 years to make games about the topics that really interest me.  Sleep Is Death is my temporary solution.  It gives you meaningful character interactions in a video game.  Today.
+ 
+
+> Could you ever see Sleep Is Death becoming a bigger, more consumer- 
+> friendly product? Perhaps making its way into the mainstream a la  
+> LittleBigPlanet?
+
+That would be hard to imagine for several reasons.  Games like Little Big Planet and Spore have interactions between players, but it's mostly asynchronous---stuff is posted by one person to be consumed by others later.  Sleep Is Death requires both the creator and the consumer to be connected simultaneously, which is not as convenient.  
+
+Controlling a story-world live, while the other person is online and waiting, requires fortitude.  It's a bit like being on stage, and I get something akin to "butterflies" before every live story that I tell.  Even the player can experience some of this flustered tension.  That can be exhilarating and deeply interesting.  But like stage acting, it's probably not for everyone.
+
+ 
+> You&#8217;ve described Sleep Is Death as an &#8216;intimate&#8217; game. What makes it  
+> intimate?
+
+When it's done right, it is the closest thing that I've experienced to a melding of minds or a shared hallucination.  The timer forces improvisation, and improvisation doesn't leave room for conscious filtering.  In the moment, you say and do surprising things through the character that you are controlling.  This is a game that I would not want to play with a total stranger.
+
+
+> Sleep Is Death offers a new kind of experience &#8211; one that plays out  
+> more like improv theatre rather than game. Do you think people will  
+> &#8216;get&#8217; the collaborative and make-believe aspects of play, or will  
+> they struggle with something they don&#8217;t understand?
+
+I think that people generally get it.  On the Player end, Sleep Is Death offers a game experience that most game-players have been dreaming about for a long time---a game where you can say and do whatever you want.  That experience acts as a pretty friendly gateway, though the novelty of doing anything you want wears off pretty quickly.  Then you start thinking about characters, and how to play characters in a way that makes an interesting story.
+
+
+
+> In all of your games with other players, has anyone ever done  
+> anything that totally took you by surprise?
+
+All the time.  That's the part of the point.  The really good players, however, have done surprising things that moved the story in an interesting direction.  Cutting open a cactus during a water shortage, not trying to ride a dog like a horse for no reason.
+
+ 
+> How much preparation time do you need to put into the creation of a  
+> story?
+
+It depends on how much time I want to spend on the visuals.  Some story-worlds, with more polished visuals, have taken me about five hours to prepare.  If I'm cobbling a story-world together out of existing bits and pieces, or I'm using simpler visuals, it only takes me an hour or two.
+
+
+> On the phone we talked a little about how making more complex games  
+> aesthetically means it's more difficult to make them interactive. Do  
+> you think this could be an issue in the future, or do you think the  
+> sharing of assets between players will result in larger, more complex  
+> stories further down the line?
+
+There's a fundamental trade-off between visual detail and interactivity.  The more detailed something is, the harder it is to edit as needed in 30 seconds.  For example, if you design an object with realistic highlights and shadows, what happens when the object gets knocked over or broken in half?  Suddenly, the highlights and shadows are off, and there's no way to fix them in 30 seconds.  Sleep Is Death has the visual style that it does---simple, low-res pixel graphics---for a good reason.
+
+ 
+> Do you think we'll ever reach a point where AI will be able to take  
+> over from a human in Sleep Is Death, without the other player  
+> perceiving the difference?
+
+I've been waiting about 27 years for this to happen.  I'm still waiting.  I hope it will happen in my lifetime, but I'm skeptical.
+ 
+
+
+> Sleep Is Death provides a new way of imparting drama without the need  
+> for violence. Do you think other developers will pick up on this?  
+> What impact do you hope Sleep Is Death will have on games in the future?
+
+I don't know what stories you've been playing, but almost all of mine have violence!
+
+Sleep Is Death is such a specific system design, where all of my core design choices were necessary for it work at all.  It's necessarily low-res, turn-based, editor-heavy, and typing-heavy.  I have trouble imagining the core idea being expanded into other games.  How could you make a realtime version?  How could you make a 3D version?  A voiced version?
+
+However, I do see "natural" intelligence popping up more and more in mainstream games.  Player-created creatures in Spore.  Friends controlling zombies in Left4Dead.  Player-controlled monsters in Demon's Souls.
+
+The core insight for all of these developments is that playing as the AI can be even more interesting than playing as the player.

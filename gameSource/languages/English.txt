@@ -1,0 +1,344 @@
+writeFailed "Error:  game folder is read-only"
+
+enterDemoCode  "Enter a demo code:"
+checkingCode  "Checking demo permissions with server..."
+
+
+title           "Sleep Is Death (Geisterfahrer)"
+volume          "Adjust music volume"
+volumeDone          "Press any key when done"
+
+escToQuit  "Press ESC to quit"
+
+control_local  "Host a Local or Manual Network game as Controller."
+control_remote  "Host an Automatic (UPNP) Remote Internet game as Controller."
+joinAsPlayer   "Join a hosted game as Player."
+
+waitingForPlayer  "Waiting for Player to connect to the following address:"
+doNotWaitTip  "(press G to start playing without a connection)"
+portTip "Port:"
+
+
+upnpTrying  "Trying to open a port on your router with UPNP..."
+upnpCloseTrying  "Closing the router port with UPNP..."
+upnpSuccess "Port opened successfully."
+upnpFailure "Failed to open a router port with UPNP."
+
+
+
+enterAddress  "Enter the Controller's address:"
+
+joiningController  "Joining game..."
+joiningFailed  "Failed to connect."
+
+loading "Loading..."
+
+quitQuestion       "Really quit?  Press Y..."
+
+
+
+search   "Search:"
+stack   "Stack:"
+
+tile     "Tile:"
+tileSetName    "Tile set name:"
+
+room     "Room:"
+roomName    "Room name:"
+
+
+sprite   "Sprite:"
+spriteName   "Sprite name:"
+
+
+object  "Object:"
+objectName   "Object name:"
+
+
+music  "Phrase:"
+musicName   "Phrase name:"
+
+timbre  "Timbre:"
+timbreName   "Timbre name:"
+
+scale  "Scale:"
+scaleName   "Scale name:"
+
+song  "Song:"
+songName   "Song name:"
+
+
+scene  "Scene:"
+sceneName   "Scene name:"
+
+palette  "Palette:"
+paletteName   "Palette name:"
+
+
+
+
+tip_undo  "Undo (Ctrl-Z)"
+tip_redo  "Redo"
+
+tip_next "Next page"
+tip_prev "Previous page"
+tip_searchMode "Switch to search mode"
+tip_stackMode "Switch to stack mode"
+
+tip_flipH "Flip horizontally"
+tip_flipV "Flip vertically"
+tip_rotateCCW "Rotate counter-clockwise"
+tip_rotateCW "Rotate clockwise"
+
+tip_clear "Clear"
+
+tip_colorize "Colorize all pixels"
+
+
+tip_pen "Draw single squares"
+tip_horLine "Fill horizontal lines"
+tip_verLine "Fill vertical lines"
+tip_fill "Flood fill"
+tip_stamp "Stamp in copies of selected pixels"
+
+tip_pickColor "Copy color from a square (Shift-click)"
+tip_pickTile "Copy tile from a square (Shift-click)"
+tip_pickPhrase "Copy phrase from a square (Shift-click)"
+
+tip_selection "Toggle selection used by Stamp tool"
+
+
+tip_walls "Toggle wall editing"
+tip_hints "Toggle object hints from scene"
+
+
+tip_delete_tile "Delete unused tile"
+tip_delete_room "Delete unused room"
+tip_delete_sprite "Delete unused sprite"
+tip_delete_object "Delete unused object"
+tip_delete_scene "Delete scene"
+tip_delete_music "Delete unused phrase"
+tip_delete_timbre "Delete unused timbre"
+tip_delete_scale "Delete unused scale"
+tip_delete_song "Delete song"
+tip_delete_palette "Delete palette"
+tip_confirm " -- Confirm"
+
+tip_trans "Toggle background tiles"
+tip_erase "Toggle erase mode"
+
+tip_objMove "Select or move object"
+tip_objSpeak "Adjust speech for selected object"
+
+tip_delete_speech "Clear object speech"
+
+tip_toggle_bubble "Switch object's speech to a bubble"
+tip_toggle_box "Switch object's speech to a box"
+
+
+tip_grid "Toggle grid and object anchors"
+
+tip_freezePlayer "Toggle player position frozen"
+
+tip_lockSelected "Toggle lock on selected object"
+tip_lockGlobal "Toggle locks enabled"
+
+tip_holdObject "Toggle object held across scene changes"
+
+
+
+tip_flip_speech "Flip speech bubble left-to-right"
+
+tip_objSet  "Replace selected object in scene"
+tip_objAdd  "Add object to scene (Ctrl-A)"
+tip_objEdit "Edit selected object in scene (Ctrl-E)"
+tip_objRemove "Remove selected object from scene (Ctrl-X)"
+
+tip_send  "Commit and send state"
+
+tip_practice  "Practice against timer"
+tip_practiceStop  "Stop practicing"
+
+
+tip_room_fade "Fade room"
+
+tip_object_fade "Fade selected object"
+
+
+tip_object_anchor "Object"
+tip_player_anchor "Player object"
+tip_anchor_selected "(selected)"
+
+
+
+tip_flipBook "Toggle image flip-book recording" 
+
+
+tip_obj_trans "Toggle background tiles"
+tip_obj_grid "Toggle grid and object anchor"
+
+tip_next_layer "Next sprite layer"
+tip_prev_layer "Previous sprite layer"
+
+tip_top_layer "Jump to top sprite layer"
+tip_bottom_layer "Jump to bottom sprite layer"
+
+tip_layer_up "Move sprite layer up"
+tip_layer_down "Move sprite layer down"
+
+
+tip_new_layer "Add layer using selected sprite (Ctrl-A)"
+tip_delete_layer "Delete sprite layer (Ctrl-X)"
+tip_replace_layer "Replace layer with selected sprite"
+tip_edit_layer "Edit this layer's sprite (Ctrl-E)"
+
+tip_zoom "Zoom in"
+tip_unzoom "Zoom out"
+
+tip_rotateLayer "Rotate layer clockwise"
+tip_rotateWholeObject "Rotate whole object"
+
+tip_flipLayer "Flip layer horizontally"
+tip_flipWholeObject "Flip whole object horizontally"
+
+tip_fadeLayer "Fade layer"
+tip_fadeWholeObject "Fade whole object"
+
+tip_glowLayer "Turn glow mode on for layer"
+tip_glowWholeObject "Turn glow mode on for whole object"
+
+tip_noGlowLayer "Turn glow mode off for layer"
+tip_noGlowWholeObject "Turn glow mode off for whole object"
+
+
+tip_draggingSprite "Dragging sprite into object"
+tip_draggingObjectObject "Dragging object into object"
+tip_draggingObjectScene "Dragging object into scene"
+
+tip_objectFull "Object is full"
+tip_sceneFull "Scene is full"
+
+
+
+tip_colorWell "Color well"
+
+tip_colorCurrent "Current color"
+
+tip_addColor "Add color to selected color well"
+
+tip_valueSlider "Value"
+
+tip_saturationSlider "Saturation"
+
+
+
+tip_edit_color "Edit color"
+tip_edit_tile "Edit tile"
+tip_edit_room "Edit room"
+tip_edit_sprite "Edit sprite"
+tip_edit_object "Edit object"
+tip_edit_phrase "Edit phrase"
+tip_edit_music "Edit music"
+tip_edit_timbre "Edit timbre"
+tip_edit_scale "Edit scale"
+tip_edit_palette "Edit palette"
+
+
+tip_closeEdit_color "Close color editor"
+tip_closeEdit_tile "Close tile editor (Ctrl-W)"
+tip_closeEdit_room "Close room editor (Ctrl-W)"
+tip_closeEdit_sprite "Close sprite editor (Ctrl-W)"
+tip_closeEdit_object "Close object editor (Ctrl-W)"
+tip_closeEdit_music "Close phrase editor (Ctrl-W)"
+tip_closeEdit_song "Close music editor (Ctrl-W)"
+tip_closeEdit_timbre "Close timbre editor (Ctrl-W)"
+tip_closeEdit_scale "Close scale editor (Ctrl-W)"
+tip_closeEdit_palette "Close palette editor (Ctrl-W)"
+
+
+tip_addTile "Save tile and add it to database"
+tip_addRoom "Save room and add it to database"
+tip_addSprite "Save sprite and add it to database"
+tip_addObject "Save object and add it to database"
+tip_addMusic "Save phrase and add it to database"
+tip_addSong "Save song and add it to database"
+tip_addTimbre "Save timbre and add it to database"
+tip_addScale "Save scale and add it to database"
+tip_addScene "Save scene and add it to database"
+tip_addPalette "Save palette and add it to database"
+
+
+
+
+
+tip_playerMove "Move"
+tip_playerSpeak "Speak"
+tip_playerAct "Act"
+
+tip_playerSend "Commit and send move"
+
+
+tip_delete_playerSpeech "Clear speech"
+tip_delete_playerAction "Clear action"
+
+
+
+tip_noConnection "No connection"
+tip_waiting "Waiting..."
+
+tip_timer "Time left until move sent"
+
+tip_noConnection_address "No connection, address"
+
+
+
+tip_addSceneToPack "Add scene to resource pack"
+tip_sceneAlreadyInPack "Scene already in resource pack"
+tip_savePack "Save the accumulated resource pack"
+
+tip_addSongToPack "Add song to resource pack"
+tip_songAlreadyInPack "Song already in resource pack"
+
+tip_addPaletteToPack "Add palette to resource pack"
+tip_paletteAlreadyInPack "Palette already in resource pack"
+
+tip_octave "Octave"
+
+tip_attack "Note attack time"
+tip_hold "Note hold time"
+tip_release "Note release time"
+
+
+tip_trackPhrase "Track phrase"
+tip_trackPhraseEmpty "Empty phrase slot"
+tip_trackTimbre "Track timbre"
+tip_trackLoudness "Track loudness"
+tip_trackStereo "Track stereo pan"
+
+
+tip_normalSpeed "Medium"
+tip_fastSpeed "Fast"
+tip_slowSpeed "Slow"
+
+
+warning_sending_soon "Your move will be sent soon"
+warning_move_received "Player move received"
+
+
+instruction_playerMove "Move with mouse"
+instruction_playerSpeak "Type to speak"
+instruction_playerAct "Type a verb, direct with mouse"
+
+
+
+
+err_webRequest   "ERROR:  Web request failed."
+err_codeFailed  "This demo code was denied by the server."
+
+
+err_failedConnect   "ERROR:  Failed to connect."
+err_failedAccept   "ERROR:  Failed to accept a connection."
+err_failedSend     "ERROR:  Failed to send a network message."
+err_failedReceive   "ERROR:  Failed to receive a network message."
+
+err_receiveCorrupted   "ERROR:  Received a corrupted network message."

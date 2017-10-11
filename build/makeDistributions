@@ -1,0 +1,102 @@
+#!/bin/sh
+
+#
+# Modification History
+#
+# 2007-November-12   Jason Rohrer
+# Copied from Cultivation build.
+#
+
+
+if [ $# -lt 2 ] ; then
+   echo "Usage: $0 release_name unix_platform_name"
+   exit 1
+fi
+
+
+rm -rf unix
+rm -rf windows
+
+mkdir windows
+mkdir unix
+
+
+# work on unix tree first
+mkdir unix/SleepIsDeath
+mkdir unix/SleepIsDeath/graphics
+mkdir unix/SleepIsDeath/settings
+mkdir unix/SleepIsDeath/languages
+mkdir unix/SleepIsDeath/templates
+mkdir unix/SleepIsDeath/loadingBay
+mkdir unix/SleepIsDeath/importOldCache
+
+
+
+cp ../gameSource/resourceSet15.tar.gz .
+tar xzf resourceSet15.tar.gz
+cp -r resourceSet15/* unix/SleepIsDeath/
+rm -r resourceSet15/ resourceSet15.tar.gz
+
+
+
+cp ../gameSource/graphics/*.tga unix/SleepIsDeath/graphics
+cp ../gameSource/settings/*.ini unix/SleepIsDeath/settings
+cp ../gameSource/languages/*.txt unix/SleepIsDeath/languages
+cp ../gameSource/templates/*.php unix/SleepIsDeath/templates
+cp ../gameSource/templates/*.html unix/SleepIsDeath/templates
+cp ../gameSource/templates/*.png unix/SleepIsDeath/templates
+cp ../gameSource/language.txt unix/SleepIsDeath
+cp ../documentation/Readme.txt unix/SleepIsDeath
+cp ../documentation/Upgrading.txt unix/SleepIsDeath
+
+
+
+# duplicate unix tree so far to make windows tree
+cp -r unix/SleepIsDeath windows/
+
+cp ../gameSource/SleepIsDeath unix/SleepIsDeath/
+
+cp win32/SleepIsDeath.exe win32/*.dll windows/SleepIsDeath/
+
+cd unix
+tar cf "SleepIsDeath_$1_$2.tar" SleepIsDeath
+gzip "SleepIsDeath_$1_$2.tar"
+
+
+cd ..
+
+g++ -o unix2dos unix2dos.c 
+cp unix2dos windows
+cp unix2dosScript windows
+
+
+cd windows
+
+
+for file in SleepIsDeath/languages/*.txt
+do
+	./unix2dosScript "$file"
+done
+
+for file in SleepIsDeath/templates/*.php
+do
+	./unix2dosScript "$file"
+done
+
+for file in SleepIsDeath/templates/*.html
+do
+	./unix2dosScript "$file"
+done
+
+
+./unix2dosScript "SleepIsDeath/resourceCache/stringDatabase.txt"
+./unix2dosScript "SleepIsDeath/Readme.txt"
+./unix2dosScript "SleepIsDeath/Upgrading.txt"
+
+
+zip -r "SleepIsDeath_$1_Windows.zip" SleepIsDeath
+
+
+
+
+

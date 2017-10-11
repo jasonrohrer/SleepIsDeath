@@ -1,0 +1,221 @@
+LAYER_SOURCE = \
+game.cpp \
+common.cpp \
+uniqueID.cpp \
+resourceManager.cpp \
+resourceDatabase.cpp \
+StringTree.cpp \
+buttons.cpp \
+Connection.cpp \
+GameHalf.cpp \
+PlayerGame.cpp \
+ControllerGame.cpp \
+Tile.cpp \
+Room.cpp \
+Editor.cpp \
+ColorEditor.cpp \
+HueValuePicker.cpp \
+ColorWells.cpp \
+BorderPanel.cpp \
+TileEditor.cpp \
+Sprite.cpp \
+DrawToolSet.cpp \
+labels.cpp \
+ResourcePicker.cpp \
+TilePicker.cpp \
+RoomPicker.cpp \
+RoomEditor.cpp \
+SpriteResource.cpp \
+SpritePicker.cpp \
+SpriteEditor.cpp \
+GameState.cpp \
+GameStateEditor.cpp \
+GameStateDisplay.cpp \
+StateToolSet.cpp \
+TransformToolSet.cpp \
+ToolTipManager.cpp \
+ToolTipDisplay.cpp \
+StateObject.cpp \
+StateObjectPicker.cpp \
+StateObjectDisplay.cpp \
+StateObjectEditor.cpp \
+PlayerMoveEditor.cpp \
+MoveToolSet.cpp \
+TimerDisplay.cpp \
+FixedTipDisplay.cpp \
+ToolTipComponentGL.cpp \
+musicPlayer.cpp \
+Envelope.cpp \
+Timbre.cpp \
+NoteGridDisplay.cpp \
+MusicEditor.cpp \
+imageCache.cpp \
+ToolTipSliderGL.cpp \
+DemoCodeChecker.cpp \
+SelectionManager.cpp \
+WarningDisplay.cpp \
+DragAndDropManager.cpp \
+Music.cpp \
+MusicPicker.cpp \
+Scene.cpp \
+ScenePicker.cpp \
+packSaver.cpp \
+PressActionGUIPanelGL.cpp \
+fixOldResources.cpp \
+TimbreResource.cpp \
+TimbrePicker.cpp \
+TimbreEditor.cpp \
+Song.cpp \
+SongPicker.cpp \
+SongEditor.cpp \
+Scale.cpp \
+ScalePicker.cpp \
+ScaleEditor.cpp \
+resourceImporter.cpp \
+usageDatabase.cpp \
+Palette.cpp \
+PalettePicker.cpp \
+PaletteEditor.cpp \
+GridOverlay.cpp \
+speechHints.cpp \
+
+
+
+
+
+GAME_GRAPHICS = \
+graphics/font_8_16.tga \
+graphics/left.tga \
+graphics/right.tga \
+graphics/edit.tga \
+graphics/close.tga \
+graphics/pickColor.tga \
+graphics/fill.tga \
+graphics/pen.tga \
+graphics/horLine.tga \
+graphics/verLine.tga \
+graphics/stamp.tga \
+graphics/selection.tga \
+graphics/undo.tga \
+graphics/redo.tga \
+graphics/delete.tga \
+graphics/confirm.tga \
+graphics/walls.tga \
+graphics/hints.tga \
+graphics/trans.tga \
+graphics/transSmall.tga \
+graphics/anchor.tga \
+graphics/playerAnchor.tga \
+graphics/move.tga \
+graphics/speak.tga \
+graphics/send.tga \
+graphics/sendConfirm.tga \
+graphics/smallAdd.tga \
+graphics/speechBubble.tga \
+graphics/speechBox.tga \
+graphics/bubbleTop.tga \
+graphics/bubbleMiddle.tga \
+graphics/bubbleMiddleExtra.tga \
+graphics/bubbleMiddleExtraThin.tga \
+graphics/bubbleBottom.tga \
+graphics/bubbleBottomFlip.tga \
+graphics/bubbleBottomNoTail.tga \
+graphics/bubbleMiddleTail.tga \
+graphics/bubbleMiddleTailFlip.tga \
+graphics/speechBoxTop.tga \
+graphics/speechBoxBottom.tga \
+graphics/actionBoxStart.tga \
+graphics/actionBoxMiddle.tga \
+graphics/actionBoxMiddleExtra.tga \
+graphics/actionBoxEnd.tga \
+graphics/actionBoxEndFlip.tga \
+graphics/actionBoxStartTall.tga \
+graphics/actionBoxMiddleTall.tga \
+graphics/actionBoxMiddleExtraTall.tga \
+graphics/actionBoxEndTall.tga \
+graphics/actionBoxEndFlipTall.tga \
+graphics/grid.tga \
+graphics/setObject.tga \
+graphics/addObject.tga \
+graphics/editObject.tga \
+graphics/removeObject.tga \
+graphics/replaceSprite.tga \
+graphics/editSprite.tga \
+graphics/removeSprite.tga \
+graphics/editRoom.tga \
+graphics/flipH.tga \
+graphics/flipV.tga \
+graphics/rotateCCW.tga \
+graphics/rotateCW.tga \
+graphics/zoom.tga \
+graphics/unzoom.tga \
+graphics/layerGrab.tga \
+graphics/layerReplace.tga \
+graphics/act.tga \
+graphics/clear.tga \
+graphics/search.tga \
+graphics/stack.tga \
+graphics/freeze.tga \
+graphics/note.tga \
+graphics/noteSpace.tga \
+graphics/music.tga \
+graphics/flipBook.tga \
+graphics/first.tga \
+graphics/last.tga \
+graphics/warning.tga \
+graphics/erase.tga \
+graphics/lock.tga \
+graphics/lockSelected.tga \
+graphics/colorSpot.tga \
+graphics/pack.tga \
+graphics/packSave.tga \
+graphics/packAlreadyIn.tga \
+graphics/practice.tga \
+graphics/practiceStop.tga \
+graphics/noDrop.tga \
+graphics/canDrop.tga \
+graphics/emptyPhrase.tga \
+graphics/timeMark.tga \
+graphics/octave.tga \
+graphics/scaleSpace.tga \
+graphics/editScale.tga \
+graphics/fast.tga \
+graphics/slow.tga \
+graphics/glow.tga \
+graphics/noGlow.tga \
+graphics/hold.tga \
+graphics/colorize.tga \
+graphics/layerUp.tga \
+graphics/layerDown.tga \
+
+
+NEEDED_MINOR_GEMS_OBJECTS = \
+ ${SCREEN_GL_SDL_O} \
+ ${SINGLE_TEXTURE_GL_O} \
+ ${TYPE_IO_O} \
+ ${STRING_UTILS_O} \
+ ${STRING_BUFFER_OUTPUT_STREAM_O} \
+ ${PATH_O} \
+ ${TIME_O} \
+ ${THREAD_O} \
+ ${MUTEX_LOCK_O} \
+ ${PNG_IMAGE_CONVERTER_O} \
+ ${TRANSLATION_MANAGER_O} \
+ ${SOCKET_O} \
+ ${HOST_ADDRESS_O} \
+ ${SOCKET_CLIENT_O} \
+ ${SOCKET_SERVER_O} \
+ ${NETWORK_FUNCTION_LOCKS_O} \
+ ${LOOKUP_THREAD_O} \
+ ${WEB_REQUEST_O} \
+ ${SETTINGS_MANAGER_O} \
+ ${FINISHED_SIGNAL_THREAD_O} \
+ ${SHA1_O} \
+ ${ENCODING_UTILS_O} \
+ ${DIRECTORY_O} \
+ ${PORT_MAPPING_O} \
+ ${LOG_O} \
+ ${APP_LOG_O} \
+ ${FILE_LOG_O} \
+ ${PRINT_LOG_O} \
+ ${PRINT_UTILS_O} \

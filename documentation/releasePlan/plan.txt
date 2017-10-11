@@ -1,0 +1,78 @@
+In the world of digital distribution and sales, we have several problems:
+
+--One-size-fits-all pricing for downloads---too expensive for some and too cheap for others---reduces our potential audience while not getting enough revenue from the already-dedicated audience.
+
+--The potential for "leaks" (or even good-natured, friend-to-friend sharing) that subvert download sales.
+
+--The use of DRM and other value-detractors to deal with the previous problem.
+
+--Reliance on guilt as a motivator for sales ("I could get it for free from my friend, but I want to support the artist, so I'll pay."  You don't pay $249 to see Clapton at Madison Square because you want to support Clapton.)
+
+--Tendency to rely on sales of peripheral, non-digital "stuff" (t-shirts, special boxed editions, posters) when our primary busy-ness is making digital stuff.
+
+
+
+The source of the above problems is the same:  lack of natural scarcity.  A copy of a digital game, after it has been released, will never again be scarce.  However, it may be possible to introduce a natural scarcity.  Don't sell copies of the game.  Sell the *experience of getting the game* (on a particular day, in a particular way) instead.  That experience cannot be reproduced on the PirateBay or given to a friend.
+
+There are a bunch of ways to do this.  Below is a description of one way that I'm planning on trying for the release of Sleep Is Death.
+
+
+
+
+Instead of selling copies after the game has been released, I will be selling *tickets* for exclusive access to the game before it has been released.  Because tickets are sold ahead of time, before the game has been downloaded by anyone at all, there is no chance of a "leak" or alternative release channel subverting ticket sales.  If you want to ensure that you get a copy of the game on the first weekend, there's only one way to do that---buy a ticket.
+
+Tickets will be on sale until Midnight, New York time, on the night of Thursday, April 8.
+
+
+Variable ticket prices will allow you to download the game on different dates, with more expensive tickets giving your earlier access.
+
+But you MUST buy a ticket ahead of time (before April 9) to be able to download the game from me in April.  No additional tickets will be sold once the game has been released to the first group of ticket-holders. 
+
+
+Ticket price:       Download date:
+$40                 Friday, April 9    (1st weekend)
+$30                 Tuesday, April 13  (1st week, missing Monday)
+$15                 Monday, April 19   (2nd week)
+$10                 Friday, April 23   (3rd weekend)
+$ 7                 Friday, April 30   (4th weekend, 3 weeks after release)
+
+
+A ticket buys you access to all of the following DRM-free downloads:
+--Windows build.
+--MacOS build.
+--Full source code bundle (which can also be compiled on GNU/Linux)
+
+
+
+
+Internal notes:
+
+Depending on how this goes, I will be releasing the game to the rest of the public on Friday, May 14, two weeks after the last ticket-holders get it.  If ticket sales are sufficient, I'll probably release it for free on SourceForge, where it will be maintained in perpetuity.
+
+If ticket sales are not sufficient, I may try to take advantage of the long interest-tail by selling downloads directly for $5 (or maybe for more than the lowest rung?)
+
+
+Journalists will be provided with demo copies of the game throughout March, leading up to the final days of ticket sales.  
+
+
+
+
+
+
+Update:
+
+Terry got a lot of blow-back about VVVVVV being $15.  Jon got similar flack for the initial price of Braid (also $15).  Don't want to turn off any potential buyers, don't want to even *appear* greedy.  Also, worried that the vast majority of people will want it at the lower price... don't want them to feel punished by making them wait 3 weeks.  Yes, the $40 people feel rewarded, but how many of those will there be?  Make 5 people happy, piss of 1000s of people.  Also, want to keep it as simple as possible while still gathering valuable data.  5 price points increases weight of decision too much.  
+
+The core question:  are people willing to pay more for "special" access to a game?  How many people are willing to pay?
+
+Also, the idea of eBay sales of a few "really early" downloads came up.  Maybe 5 downloads, one day earlier than everyone else.  That would be a good way to measure the true market price for early access.
+
+Also, it's interesting to think about making the "upgrade" to an earlier release small enough that it is attractive to most people.  "Just a few more dollars, might as well."
+
+If it is double the price, it might give people pause.  If it crosses the $10 mark, it will give people pause.  Maybe $6 and $9?  $7 and $9?  $7 and $11... $8 and $11
+
+
+Ticket price:       Download date:
+5 eBay sales        Thursday, April 8  (1 day early)
+$11                 Friday, April 9    (1st weekend)
+$ 7                 Monday, April 12  (1st week)

@@ -1,0 +1,72 @@
+#!/bin/sh
+
+#
+# Modification History
+#
+# 2007-November-12   Jason Rohrer
+# Copied from Cultivation build.
+#
+
+
+if [ $# -lt 3 ] ; then
+   echo "Usage: $0 release_name unix_platform_name path_to_SDL.framework"
+   exit 1
+fi
+
+
+rm -rf mac
+
+mkdir mac
+
+
+
+mkdir mac/SleepIsDeath
+mkdir mac/SleepIsDeath/graphics
+mkdir mac/SleepIsDeath/settings
+mkdir mac/SleepIsDeath/languages
+mkdir mac/SleepIsDeath/templates
+mkdir mac/SleepIsDeath/loadingBay
+mkdir mac/SleepIsDeath/importOldCache
+
+
+cp ../gameSource/resourceSet15.tar.gz .
+tar xzf resourceSet15.tar.gz
+cp -r resourceSet15/* mac/SleepIsDeath/
+rm -r resourceSet15/ resourceSet15.tar.gz
+
+
+
+cp ../gameSource/graphics/*.tga mac/SleepIsDeath/graphics
+cp ../gameSource/settings/*.ini mac/SleepIsDeath/settings
+cp ../gameSource/languages/*.txt mac/SleepIsDeath/languages
+cp ../gameSource/templates/*.php mac/SleepIsDeath/templates
+cp ../gameSource/templates/*.html mac/SleepIsDeath/templates
+cp ../gameSource/templates/*.png mac/SleepIsDeath/templates
+cp ../gameSource/language.txt mac/SleepIsDeath
+cp ../documentation/Readme.txt mac/SleepIsDeath
+cp ../documentation/Upgrading.txt mac/SleepIsDeath
+
+
+
+
+cp -r macOSX/SleepIsDeath.app mac/SleepIsDeath/SleepIsDeath.app
+cp ../gameSource/SleepIsDeath mac/SleepIsDeath/SleepIsDeath.app/Contents/MacOS
+
+rm -r mac/SleepIsDeath/SleepIsDeath.app/CVS
+rm -r mac/SleepIsDeath/SleepIsDeath.app/Contents/CVS
+rm -r mac/SleepIsDeath/SleepIsDeath.app/Contents/MacOS/CVS
+rm -r mac/SleepIsDeath/SleepIsDeath.app/Contents/Resources/CVS
+rm -r mac/SleepIsDeath/SleepIsDeath.app/Contents/Frameworks/CVS
+
+# install SDL framework
+cp -r $3 mac/SleepIsDeath/SleepIsDeath.app/Contents/Frameworks/
+
+cd mac
+tar cf "SleepIsDeath_$1_$2.tar" SleepIsDeath
+gzip "SleepIsDeath_$1_$2.tar"
+
+
+
+
+
+
