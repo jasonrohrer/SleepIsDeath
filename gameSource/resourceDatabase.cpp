@@ -610,7 +610,7 @@ int getSearchResults(  const char *inResourceType,
     char *lowerSearchString = stringToLowerCase( inSearchString );
 
 
-    if( lowerSearchString == '\0' ) {
+    if( *lowerSearchString == '\0' ) {
         // empty search, consider everything
         numGotten = t->getMatches( lowerSearchString, inNumToSkip, inNumToGet,
                                    (void **)values );
