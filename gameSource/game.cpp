@@ -548,7 +548,7 @@ int mainFunction( int inNumArgs, char **inArgs ) {
 
     screen =
         new ScreenGL( screenWidth, screenHeight, fullscreen,
-                      30, false,
+                      30,
                       "SleepIsDeath", NULL, NULL, NULL );
 
     // may change if specified resolution is not supported
