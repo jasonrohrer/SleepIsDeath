@@ -260,7 +260,7 @@ Image *Music::getImage() {
         channels[i] = image->getChannel( i );
         }
 
-    Color *drawColor = &lowColor;
+    //Color *drawColor = &lowColor;
 
     //Color *drawColorA = &lowColor;//&toneLowColor; 
     //Color *drawColorB = &medColor;//&toneHighColor;
@@ -269,12 +269,12 @@ Image *Music::getImage() {
     
         
     for( int y=0; y<N; y++ ) {
-        if( y>4 ) {
-            drawColor = &medColor;
-            }
-        if( y>9 ) {
-            drawColor = &hiColor;
-            }
+        //if( y>4 ) {
+        //    drawColor = &medColor;
+        //    }
+        //if( y>9 ) {
+        //    drawColor = &hiColor;
+        //    }
 
         Color *levelColor = Color::linearSum( &drawColorB, &drawColorA,
                                               y / (float)N );

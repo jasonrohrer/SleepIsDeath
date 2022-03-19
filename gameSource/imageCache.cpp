@@ -52,7 +52,7 @@ static File *getCacheFile( uniqueID inID, char inUseTrans ) {
         transFlag = 1;
         }
     
-    char *name = autoSprintf( "%s_%d", idString, inUseTrans );
+    char *name = autoSprintf( "%s_%d", idString, transFlag );
     
     delete [] idString;
     
