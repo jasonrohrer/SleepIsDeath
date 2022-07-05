@@ -19,11 +19,11 @@
 <br>
 <br>
 
-<a href="http://ishanisv.org/sid/">Ishani's Sleep Is Death Page</a> -- A tool for importing tile sets and objects.
+<a href="https://www.ishani.org/projects/InSiDe/">Ishani's Sleep Is Death Page</a> -- A tool for importing tile sets and objects.
 <br>
 <br>
 
-<a href="http://wiki.github.com/Spooner/flipped/">Flipped</a> -- A tool for editing and merging flip books.
+<a href="https://github.com/bil-bas/flipped">Flipped</a> -- A tool for editing and merging flip books.
 
 <br>
 <br>
